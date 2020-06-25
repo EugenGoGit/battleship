@@ -7,10 +7,7 @@ import org.scrum.psd.battleship.controller.dto.Letter;
 import org.scrum.psd.battleship.controller.dto.Position;
 import org.scrum.psd.battleship.controller.dto.Ship;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     private static List<Ship> myFleet;
@@ -24,6 +21,9 @@ public class Main {
     public static final String ANSI_GREEN =  "\u001B[32m";
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_MAGENTA =  "\u001B[35m";
+
+    private static int rowCount = 8;
+    private static int columnCount = 8;
 
 
 
@@ -71,6 +71,7 @@ public class Main {
 
             console.println("");
             printGameState();
+            printEnemyField();
             console.println("Player, it's your turn");
             console.println("Enter coordinates for your shot :");
             Position position = parsePosition(scanner.next());
@@ -137,8 +138,8 @@ public class Main {
     }
 
     private static Position getRandomPosition() {
-        int rows = 8;
-        int lines = 8;
+        int rows =  rowCount;
+        int lines = columnCount;
         Random random = new Random();
         Letter letter = Letter.values()[random.nextInt(lines)];
         int number = random.nextInt(rows);
@@ -170,31 +171,164 @@ public class Main {
             }
         }
     }
-
     private static void InitializeEnemyFleet() {
-        enemyFleet = GameController.initializeShips();
+        List<List<Ship>>ListFleet = new ArrayList<>();
+        ListFleet.add(InitializeEnemyFleet1());
+        ListFleet.add(InitializeEnemyFleet2());
+        ListFleet.add(InitializeEnemyFleet3());
+        ListFleet.add(InitializeEnemyFleet4());
+        ListFleet.add(InitializeEnemyFleet5());
+        enemyFleet = ListFleet.get(random(0, 4));
+    }
 
-        enemyFleet.get(0).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(0).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(0).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(0).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(0).getPositions().add(new Position(Letter.B, 4));
+    public static int random(int min, int max) {
+        Random r = new Random();
+        max -= min;
+        return r.nextInt(max) + min;
+    }
 
-        enemyFleet.get(1).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(1).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(1).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(1).getPositions().add(new Position(Letter.B, 4));
+    private static List<Ship>InitializeEnemyFleet1() {
+        List<Ship> Fleet = GameController.initializeShips();
 
-        enemyFleet.get(2).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(2).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(2).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.C, 4));
 
-        enemyFleet.get(3).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(3).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(3).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.C, 4));
 
-        enemyFleet.get(4).getPositions().add(new Position(Letter.B, 4));
-        enemyFleet.get(4).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.C, 4));
+
+        Fleet.get(3).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.F, 4));
+
+        Fleet.get(4).getPositions().add(new Position(Letter.C, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.C, 4));
+
+        return Fleet;
+    }
+
+    private static List<Ship>InitializeEnemyFleet2() {
+
+        List<Ship> Fleet = GameController.initializeShips();
+
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(4).getPositions().add(new Position(Letter.F, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.B, 4));
+
+        return Fleet;
+    }
+
+    private static List<Ship>InitializeEnemyFleet3() {
+
+        List<Ship> Fleet = GameController.initializeShips();
+
+        Fleet.get(0).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.A, 4));
+
+        Fleet.get(1).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.A, 4));
+
+        Fleet.get(2).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.F, 4));
+
+        Fleet.get(3).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.A, 4));
+
+        Fleet.get(4).getPositions().add(new Position(Letter.A, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.A, 4));
+
+        return Fleet;
+    }
+
+    private static List<Ship>InitializeEnemyFleet4() {
+
+        List<Ship> Fleet = GameController.initializeShips();
+
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.F, 4));
+
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(4).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.B, 4));
+
+        return Fleet;
+    }
+
+    private static List<Ship>InitializeEnemyFleet5() {
+
+        List<Ship> Fleet = GameController.initializeShips();
+
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(0).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.F, 4));
+
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(1).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(2).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(3).getPositions().add(new Position(Letter.B, 4));
+
+        Fleet.get(4).getPositions().add(new Position(Letter.B, 4));
+        Fleet.get(4).getPositions().add(new Position(Letter.B, 4));
+
+        return Fleet;
     }
 
     private static void InitializeMyStaticFleet() {
@@ -228,4 +362,34 @@ public class Main {
         System.out.println(ANSI_BLUE + "Yours missed shots: " + myMissedShots + ANSI_RESET);
         System.out.println(ANSI_RED + "PC missed shots: " + enemySuccesShots + ANSI_RESET);
     }
+
+    private static void printEnemyField() {
+
+        Map<Letter, Map<Integer, Integer>> field = new HashMap<Letter, Map<Integer, Integer>>();
+        for (Letter row : Letter.values()) {
+            Map<Integer, Integer> rowElem = new HashMap<Integer, Integer>();
+            for (Integer i = 1; i <= columnCount; i++) {
+                rowElem.put(i,0);
+            }
+            field.put(row,rowElem);
+        }
+
+        for (Ship ship : enemyFleet) {
+            for (Position position : ship.getPositions()) {
+                field.get(position.getColumn()).put(position.getRow(), 1);
+            }
+        }
+
+            for (Letter row : Letter.values()) {
+                System.out.print(row + "|  ");
+                for (Integer i = 1; i <= columnCount; i++) {
+                    if (field.get(row).get(i) == 1)
+                        System.out.print(ANSI_GREEN + "0  " + ANSI_RESET);
+                    else
+                        System.out.print(ANSI_BLUE + "0  " + ANSI_RESET);
+                }
+                System.out.println(" ");
+            }
+        }
+
 }

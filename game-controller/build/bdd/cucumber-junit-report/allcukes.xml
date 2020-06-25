@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.775811">
+<testcase classname="Validate ships" name="Valid ship placement" time="0.775385">
+<system-out><![CDATA[Given I have a 5 ship with 5 positions......................................passed
+When I check if the ship is valid...........................................passed
+Then the result should be true..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate ships" name="Invalid ship placement" time="0.000426">
+<system-out><![CDATA[Given I have a 5 ship with 4 positions......................................passed
+When I check if the ship is valid...........................................passed
+Then the result should be false.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

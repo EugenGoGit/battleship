@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bdd.CucumberRunner" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-06-19T06:37:42" hostname="1-ПК" time="0.114">
+  <properties/>
+  <testcase name="Given I have a 5 ship with 5 positions" classname="bdd.CucumberRunner" time="0.002"/>
+  <testcase name="When I check if the ship is valid" classname="bdd.CucumberRunner" time="0.001"/>
+  <testcase name="Then the result should be true" classname="bdd.CucumberRunner" time="0.001"/>
+  <testcase name="Given I have a 5 ship with 4 positions" classname="bdd.CucumberRunner" time="0.001"/>
+  <testcase name="When I check if the ship is valid" classname="bdd.CucumberRunner" time="0.0"/>
+  <testcase name="Then the result should be false" classname="bdd.CucumberRunner" time="0.001"/>
+  <system-out><![CDATA[Feature: Validate ships
+  In order to avoid cheating
+  As a player
+  I want to be notified if my ship has an invalid placement
+
+  @Runme
+  Scenario: Valid ship placement           ?[90m# features/steps/ShipValidation.feature:7?[0m
+    ?[32mGiven ?[0m?[32mI have a ?[0m?[32m?[1m5?[0m?[32m ship with ?[0m?[32m?[1m5?[0m?[32m positions?[0m ?[90m# ShipValidationSteps.i_have_a_size_ship_with_positions(int,int)?[0m
+    ?[32mWhen ?[0m?[32mI check if the ship is valid?[0m      ?[90m# ShipValidationSteps.i_check_if_the_ship_is_valid()?[0m
+    ?[32mThen ?[0m?[32mthe result should be ?[0m?[32m?[1mtrue?[0m         ?[90m# ShipValidationSteps.the_result_should_be(boolean)?[0m
+
+  @Runme
+  Scenario: Invalid ship placement         ?[90m# features/steps/ShipValidation.feature:13?[0m
+    ?[32mGiven ?[0m?[32mI have a ?[0m?[32m?[1m5?[0m?[32m ship with ?[0m?[32m?[1m4?[0m?[32m positions?[0m ?[90m# ShipValidationSteps.i_have_a_size_ship_with_positions(int,int)?[0m
+    ?[32mWhen ?[0m?[32mI check if the ship is valid?[0m      ?[90m# ShipValidationSteps.i_check_if_the_ship_is_valid()?[0m
+    ?[32mThen ?[0m?[32mthe result should be ?[0m?[32m?[1mfalse?[0m        ?[90m# ShipValidationSteps.the_result_should_be(boolean)?[0m
+
+2 Scenarios (?[32m2 passed?[0m)
+6 Steps (?[32m6 passed?[0m)
+0m0,776s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

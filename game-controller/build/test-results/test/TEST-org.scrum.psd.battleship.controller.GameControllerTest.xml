@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.scrum.psd.battleship.controller.GameControllerTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-06-19T06:37:43" hostname="1-ПК" time="0.017">
+  <properties/>
+  <testcase name="testIsShipValidFalse" classname="org.scrum.psd.battleship.controller.GameControllerTest" time="0.004"/>
+  <testcase name="testCheckIsHitFalse" classname="org.scrum.psd.battleship.controller.GameControllerTest" time="0.003"/>
+  <testcase name="testCheckIsHitPositstionIsNull" classname="org.scrum.psd.battleship.controller.GameControllerTest" time="0.001"/>
+  <testcase name="testIsShipValidTrue" classname="org.scrum.psd.battleship.controller.GameControllerTest" time="0.001"/>
+  <testcase name="testCheckIsHitTrue" classname="org.scrum.psd.battleship.controller.GameControllerTest" time="0.001"/>
+  <testcase name="testCheckIsHitShipIsNull" classname="org.scrum.psd.battleship.controller.GameControllerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

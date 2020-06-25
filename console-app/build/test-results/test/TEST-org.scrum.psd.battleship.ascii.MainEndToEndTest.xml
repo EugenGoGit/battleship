@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.scrum.psd.battleship.ascii.MainEndToEndTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-06-19T06:37:32" hostname="1-ПК" time="0.496">
+  <properties/>
+  <testcase name="testPlayGameShotMisses" classname="org.scrum.psd.battleship.ascii.MainEndToEndTest" time="0.44"/>
+  <testcase name="testPlayGameShotHits" classname="org.scrum.psd.battleship.ascii.MainEndToEndTest" time="0.055"/>
+  <system-out><![CDATA[                                     |__
+                                     |\/
+                                     ---
+                                     / | [
+                              !      | |||
+                            _/|     _/|-++'
+                        +  +--|    |--|--|_ |-
+                     { /|__|  |/\__|  |--- |||__/
+                    +---------------___[}-_===_.'____                 /\
+                ____`-' ||___-{]_| _[}-  |     |_[___\==--            \/   _
+ __..._____--==/___]_|__|_____________________________[___\==--____,------' .7
+|                        Welcome to Battleship                         BB-61/
+ \_________________________________________________________________________|
+
+Please position your fleet (Game board has size from A to H and 1 to 8) :
+
+Please enter the positions for the Aircraft Carrier (size: 5)
+Enter position 1 of 5 (i.e A3):
+Enter position 2 of 5 (i.e A3):
+Enter position 3 of 5 (i.e A3):
+Enter position 4 of 5 (i.e A3):
+Enter position 5 of 5 (i.e A3):
+
+Please enter the positions for the Battleship (size: 4)
+Enter position 1 of 4 (i.e A3):
+Enter position 2 of 4 (i.e A3):
+Enter position 3 of 4 (i.e A3):
+Enter position 4 of 4 (i.e A3):
+
+Please enter the positions for the Submarine (size: 3)
+Enter position 1 of 3 (i.e A3):
+Enter position 2 of 3 (i.e A3):
+Enter position 3 of 3 (i.e A3):
+
+Please enter the positions for the Destroyer (size: 3)
+Enter position 1 of 3 (i.e A3):
+Enter position 2 of 3 (i.e A3):
+Enter position 3 of 3 (i.e A3):
+
+Please enter the positions for the Patrol Boat (size: 2)
+Enter position 1 of 2 (i.e A3):
+Enter position 2 of 2 (i.e A3):
+                  __
+                 /  \
+           .-.  |    |
+   *    _.-'  \  \__/
+    \.-'       \
+   /          _/
+  |      _  /" "
+  |     /_'
+   \    \_/
+    " "" "" "" "
+
+Player, it's your turn
+Enter coordinates for your shot :
+Miss
+
+Computer shoot in A0 and miss
+
+Player, it's your turn
+Enter coordinates for your shot :
+                                     |__
+                                     |\/
+                                     ---
+                                     / | [
+                              !      | |||
+                            _/|     _/|-++'
+                        +  +--|    |--|--|_ |-
+                     { /|__|  |/\__|  |--- |||__/
+                    +---------------___[}-_===_.'____                 /\
+                ____`-' ||___-{]_| _[}-  |     |_[___\==--            \/   _
+ __..._____--==/___]_|__|_____________________________[___\==--____,------' .7
+|                        Welcome to Battleship                         BB-61/
+ \_________________________________________________________________________|
+
+Please position your fleet (Game board has size from A to H and 1 to 8) :
+
+Please enter the positions for the Aircraft Carrier (size: 5)
+Enter position 1 of 5 (i.e A3):
+Enter position 2 of 5 (i.e A3):
+Enter position 3 of 5 (i.e A3):
+Enter position 4 of 5 (i.e A3):
+Enter position 5 of 5 (i.e A3):
+
+Please enter the positions for the Battleship (size: 4)
+Enter position 1 of 4 (i.e A3):
+Enter position 2 of 4 (i.e A3):
+Enter position 3 of 4 (i.e A3):
+Enter position 4 of 4 (i.e A3):
+
+Please enter the positions for the Submarine (size: 3)
+Enter position 1 of 3 (i.e A3):
+Enter position 2 of 3 (i.e A3):
+Enter position 3 of 3 (i.e A3):
+
+Please enter the positions for the Destroyer (size: 3)
+Enter position 1 of 3 (i.e A3):
+Enter position 2 of 3 (i.e A3):
+Enter position 3 of 3 (i.e A3):
+
+Please enter the positions for the Patrol Boat (size: 2)
+Enter position 1 of 2 (i.e A3):
+Enter position 2 of 2 (i.e A3):
+                  __
+                 /  \
+           .-.  |    |
+   *    _.-'  \  \__/
+    \.-'       \
+   /          _/
+  |      _  /" "
+  |     /_'
+   \    \_/
+    " "" "" "" "
+
+Player, it's your turn
+Enter coordinates for your shot :
+?                \         .  ./
+              \      .:" ";'.:.." "   /
+                  (M^^.^~~:.'" ").
+            -   (/  .    . . \ \)  -
+               ((| :. ~ ^  :. .|))
+            -   (\- |  \ /  |  /)  -
+                 -\  \     /  /-
+                   \  \   /  /
+Yeah ! Nice hit !
+
+Computer shoot in F4 and miss
+
+Player, it's your turn
+Enter coordinates for your shot :
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

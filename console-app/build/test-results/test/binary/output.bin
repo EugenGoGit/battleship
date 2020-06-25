@@ -1,0 +1,130 @@
+*                                     |__
+*                                     |\/
+*                                     ---
+,                                     / | [
+,                              !      | |||
+-                            _/|     _/|-++'
+0                        +  +--|    |--|--|_ |-
+3                     { /|__|  |/\__|  |--- |||__/
+J                    +---------------___[}-_===_.'____                 /\
+N                ____`-' ||___-{]_| _[}-  |     |_[___\==--            \/   _
+P __..._____--==/___]_|__|_____________________________[___\==--____,------' .7
+O|                        Welcome to Battleship                         BB-61/
+N \_________________________________________________________________________|
+
+KPlease position your fleet (Game board has size from A to H and 1 to 8) :
+
+?Please enter the positions for the Aircraft Carrier (size: 5)
+!Enter position 1 of 5 (i.e A3):
+!Enter position 2 of 5 (i.e A3):
+!Enter position 3 of 5 (i.e A3):
+!Enter position 4 of 5 (i.e A3):
+!Enter position 5 of 5 (i.e A3):
+
+9Please enter the positions for the Battleship (size: 4)
+!Enter position 1 of 4 (i.e A3):
+!Enter position 2 of 4 (i.e A3):
+!Enter position 3 of 4 (i.e A3):
+!Enter position 4 of 4 (i.e A3):
+
+8Please enter the positions for the Submarine (size: 3)
+!Enter position 1 of 3 (i.e A3):
+!Enter position 2 of 3 (i.e A3):
+!Enter position 3 of 3 (i.e A3):
+
+8Please enter the positions for the Destroyer (size: 3)
+!Enter position 1 of 3 (i.e A3):
+!Enter position 2 of 3 (i.e A3):
+!Enter position 3 of 3 (i.e A3):
+
+:Please enter the positions for the Patrol Boat (size: 2)
+!Enter position 1 of 2 (i.e A3):
+!Enter position 2 of 2 (i.e A3):
+                  __
+                 /  \
+           .-.  |    |
+   *    _.-'  \  \__/
+    \.-'       \
+   /          _/
+  |      _  /" "
+  |     /_'
+   \    \_/
+    " "" "" "" "
+
+Player, it's your turn
+#Enter coordinates for your shot :
+Miss
+
+Computer shoot in A0 and miss
+
+Player, it's your turn
+#Enter coordinates for your shot :
+*                                     |__
+*                                     |\/
+*                                     ---
+,                                     / | [
+,                              !      | |||
+-                            _/|     _/|-++'
+0                        +  +--|    |--|--|_ |-
+3                     { /|__|  |/\__|  |--- |||__/
+J                    +---------------___[}-_===_.'____                 /\
+N                ____`-' ||___-{]_| _[}-  |     |_[___\==--            \/   _
+P __..._____--==/___]_|__|_____________________________[___\==--____,------' .7
+O|                        Welcome to Battleship                         BB-61/
+N \_________________________________________________________________________|
+
+KPlease position your fleet (Game board has size from A to H and 1 to 8) :
+
+?Please enter the positions for the Aircraft Carrier (size: 5)
+!Enter position 1 of 5 (i.e A3):
+!Enter position 2 of 5 (i.e A3):
+!Enter position 3 of 5 (i.e A3):
+!Enter position 4 of 5 (i.e A3):
+!Enter position 5 of 5 (i.e A3):
+
+9Please enter the positions for the Battleship (size: 4)
+!Enter position 1 of 4 (i.e A3):
+!Enter position 2 of 4 (i.e A3):
+!Enter position 3 of 4 (i.e A3):
+!Enter position 4 of 4 (i.e A3):
+
+8Please enter the positions for the Submarine (size: 3)
+!Enter position 1 of 3 (i.e A3):
+!Enter position 2 of 3 (i.e A3):
+!Enter position 3 of 3 (i.e A3):
+
+8Please enter the positions for the Destroyer (size: 3)
+!Enter position 1 of 3 (i.e A3):
+!Enter position 2 of 3 (i.e A3):
+!Enter position 3 of 3 (i.e A3):
+
+:Please enter the positions for the Patrol Boat (size: 2)
+!Enter position 1 of 2 (i.e A3):
+!Enter position 2 of 2 (i.e A3):
+                  __
+                 /  \
+           .-.  |    |
+   *    _.-'  \  \__/
+    \.-'       \
+   /          _/
+  |      _  /" "
+  |     /_'
+   \    \_/
+    " "" "" "" "
+
+Player, it's your turn
+#Enter coordinates for your shot :
+"                \         .  ./
+)              \      .:" ";'.:.." "   /
+$                  (M^^.^~~:.'" ").
+&            -   (/  .    . . \ \)  -
+$               ((| :. ~ ^  :. .|))
+&            -   (\- |  \ /  |  /)  -
+"                 -\  \     /  /-
+                    \  \   /  /
+Yeah ! Nice hit !
+
+Computer shoot in F4 and miss
+
+Player, it's your turn
+#Enter coordinates for your shot :
